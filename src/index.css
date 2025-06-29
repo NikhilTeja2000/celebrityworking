@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Luckiest Guy', cursive;
+  }
+}
+
+@layer components {
+  .krico-text {
+    color: #b6f41b;
+    text-shadow: 
+      -2px -2px 0 #00153a,
+      2px -2px 0 #00153a,
+      -2px 2px 0 #00153a,
+      2px 2px 0 #00153a,
+      -3px 0 0 #00153a,
+      3px 0 0 #00153a,
+      0 -3px 0 #00153a,
+      0 3px 0 #00153a;
+  }
+  
+  .krico-glass {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .krico-button {
+    background: linear-gradient(135deg, #22c55e 0%, #ef4444 50%, #eab308 100%);
+    transition: all 0.3s ease;
+    transform: translateY(0);
+  }
+  
+  .krico-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .krico-button:active {
+    transform: translateY(0);
+  }
+
+  .markdown-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+  }
+  
+  .markdown-content th,
+  .markdown-content td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 21, 58, 0.2);
+  }
+  
+  .markdown-content th {
+    background: rgba(182, 244, 27, 0.1);
+    font-weight: bold;
+    color: #00153a;
+  }
+  
+  .markdown-content td {
+    color: #00153a;
+  }
+  
+  .markdown-content h3 {
+    color: #00153a;
+    margin: 1.5rem 0 1rem 0;
+    font-size: 1.25rem;
+  }
+  
+  .markdown-content ol {
+    color: #00153a;
+    padding-left: 1.5rem;
+  }
+  
+  .markdown-content li {
+    margin: 0.5rem 0;
+  }
+}
